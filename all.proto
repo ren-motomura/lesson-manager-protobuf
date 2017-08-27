@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package protobufs;
+
+enum ErrorType {
+    INVALID_REQUEST_FORMAT = 0;
+    USER_NOT_FOUND = 1;
+    INVALID_PASSWORD = 2;
+    INTERNAL_SERVER_ERROR = 3;
+}
+
+message ErrorResponse {
+    ErrorType errorType = 1;
+    string message = 2;
+}
+
+message CreateSessionRequest {
+    string emailAddress = 1;
+    string password = 2;
+}
+
+message CreateSessionResponse {
+    bool success = 1;
+}
+
+message CreateUserRequest {
+    string name = 1;
+    string emailAddress = 2;
+    string password = 3;
+}
+
+message CreateUserResponse {
+    int64 id = 1;
+    string name = 2;
+    string emailAddress = 3;
+}
