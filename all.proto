@@ -103,3 +103,20 @@ message CreateCustomerRequest {
 message CreateCustomerResponse {
     Customer customer = 1;
 }
+
+message DeleteCustomerRequest {
+    int32 id = 1;
+}
+
+message DeleteCustomerResponse {
+    bool success = 1;
+}
+
+message SetCardOnCustomerRequest {
+    int32 customerId = 1;
+    Card card = 2;
+}
+
+message SetCardOnCustomerResponse {
+    Customer customer = 1;
+}
