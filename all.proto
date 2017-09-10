@@ -16,13 +16,20 @@ message ErrorResponse {
     string message = 2;
 }
 
+message Company {
+    int32 id = 1;
+    string name = 2;
+    string emailAddress = 3;
+    int64 createdAt = 4;   
+}
+
 message CreateSessionRequest {
     string emailAddress = 1;
     string password = 2;
 }
 
 message CreateSessionResponse {
-    bool success = 1;
+    Company company = 1;
 }
 
 message CreateCompanyRequest {
@@ -32,10 +39,7 @@ message CreateCompanyRequest {
 }
 
 message CreateCompanyResponse {
-    int32 id = 1;
-    string name = 2;
-    string emailAddress = 3;
-    int64 createdAt = 4;   
+    Company company = 1;
 }
 
 message Studio {
