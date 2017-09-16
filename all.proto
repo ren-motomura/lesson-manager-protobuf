@@ -50,6 +50,10 @@ message Studio {
     int64 createdAt = 5;   
 }
 
+message SelectStudiosResponse {
+    repeated Studio studios = 1;
+}
+
 message CreateStudioRequest {
     string name = 1;
     string address = 2;
