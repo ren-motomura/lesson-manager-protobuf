@@ -45,11 +45,15 @@ message CreateCompanyResponse {
 message Studio {
     int32 id = 1;
     string name = 2;
-    int64 createdAt = 4;   
+    string address = 3;
+    string phoneNumber = 4;
+    int64 createdAt = 5;   
 }
 
 message CreateStudioRequest {
-    string name = 2;
+    string name = 1;
+    string address = 2;
+    string phoneNumber = 3;
 }
 
 message CreateStudioResponse {
