@@ -48,7 +48,7 @@ message Studio {
     string address = 3;
     string phoneNumber = 4;
     int64 createdAt = 5;   
-    string imageFileName = 6;
+    string imageLink = 6;
 }
 
 message SelectStudiosResponse {
@@ -59,7 +59,7 @@ message CreateStudioRequest {
     string name = 1;
     string address = 2;
     string phoneNumber = 3;
-    string imageFileName = 4;
+    string imageLink = 4;
 }
 
 message CreateStudioResponse {
