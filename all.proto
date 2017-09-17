@@ -51,6 +51,14 @@ message SetCompanyImageLinkResponse {
     Company company = 1;
 }
 
+message SetCompanyPasswordRequest {
+    string password = 1;
+}
+
+message SetCompanyPasswordResponse {
+    Company company = 1;
+}
+
 message Studio {
     int32 id = 1;
     string name = 2;
