@@ -66,6 +66,14 @@ message CreateStudioResponse {
     Studio studio = 1;
 }
 
+message UpdateStudioRequest {
+    Studio studio = 1;
+}
+
+message UpdateStudioResponse {
+    Studio studio = 1;
+}
+
 message DeleteStudioRequest {
     int32 id = 1;
 }
