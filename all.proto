@@ -20,7 +20,8 @@ message Company {
     int32 id = 1;
     string name = 2;
     string emailAddress = 3;
-    int64 createdAt = 4;   
+    int64 createdAt = 4;
+    string imageLInk = 5;
 }
 
 message CreateSessionRequest {
@@ -39,6 +40,14 @@ message CreateCompanyRequest {
 }
 
 message CreateCompanyResponse {
+    Company company = 1;
+}
+
+message SetCompanyImageLinkRequest {
+    string imageLink = 1;
+}
+
+message SetCompanyImageLinkResponse {
     Company company = 1;
 }
 
