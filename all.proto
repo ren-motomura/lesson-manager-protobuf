@@ -131,7 +131,7 @@ message UpdateStaffRequest {
     Staff staff = 1;
 }
 
-message UpdateStaffReponse {
+message UpdateStaffResponse {
     Staff staff = 1;
 }
 
