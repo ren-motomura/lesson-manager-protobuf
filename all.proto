@@ -106,6 +106,10 @@ message Staff {
     string imageLink = 4;
 }
 
+message SelectStaffsResponse {
+    repeated Staff staffs = 1;
+}
+
 message CreateStaffRequest {
     string name = 1;
     string imageLink = 2;
@@ -121,6 +125,14 @@ message DeleteStaffRequest {
 
 message DeleteStaffResponse {
     bool success = 1;
+}
+
+message UpdateStaffRequest {
+    Staff staff = 1;
+}
+
+message UpdateStaffReponse {
+    Staff staff = 1;
 }
 
 message Card {
