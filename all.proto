@@ -102,11 +102,13 @@ message DeleteStudioResponse {
 message Staff {
     int32 id = 1;
     string name = 2;
-    int64 createdAt = 4;   
+    int64 createdAt = 3;   
+    string imageLink = 4;
 }
 
 message CreateStaffRequest {
-    string name = 2;
+    string name = 1;
+    string imageLink = 2;
 }
 
 message CreateStaffResponse {
