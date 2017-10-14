@@ -147,6 +147,10 @@ message Customer {
     Card card = 4;
 }
 
+message SelectCustomersResponse {
+    repeated Customer customers = 1;
+}
+
 message CreateCustomerRequest {
     string name = 1;
     string description = 2;
