@@ -170,6 +170,14 @@ message DeleteCustomerResponse {
     bool success = 1;
 }
 
+message UpdateCustomerRequest {
+    Customer customer = 1;
+}
+
+message UpdateCustomerResponse {
+    Customer customer = 1;
+}
+
 message SetCardOnCustomerRequest {
     int32 customerId = 1;
     Card card = 2;
