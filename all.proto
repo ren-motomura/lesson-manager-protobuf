@@ -11,6 +11,7 @@ enum ErrorType {
     FORBIDDEN = 5;
     CONFLICT = 6;
     CARD_NOT_REGISTERED = 7;
+    DUPLICATE_NAME_EXIST = 8;
 }
 
 message ErrorResponse {
