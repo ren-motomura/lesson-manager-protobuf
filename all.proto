@@ -213,7 +213,7 @@ message Lesson {
     int64 takenAt = 7;    
 }
 
-message RegisterLEssonRequest {
+message RegisterLessonRequest {
     int32 studioId = 2;
     int32 staffId = 3;
     int32 customerId = 4;
