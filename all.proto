@@ -197,3 +197,22 @@ message AddCreditRequest {
 message AddCreditResponse {
     Customer customer = 1;
 }
+
+enum PaymentType {
+    ByCash = 0;
+    ByCard = 1;
+}
+
+message Lesson {
+    int32 id = 1;
+    int32 studioId = 2;
+    int32 staffId = 3;
+    int32 customerId = 4;
+    int32 fee = 5;
+    PaymentType paymentType = 6;
+    int64 takenAt = 7;    
+}
+
+message RegisterLesson {
+    Lesson lesson = 1;
+}
