@@ -228,4 +228,5 @@ message RegisterLessonRequest {
 
 message RegisterLessonResponse {
     Lesson lesson = 1;
+    Customer customer = 2;
 }
