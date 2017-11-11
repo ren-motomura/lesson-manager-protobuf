@@ -12,6 +12,10 @@ enum ErrorType {
     CONFLICT = 6;
     CARD_NOT_REGISTERED = 7;
     DUPLICATE_NAME_EXIST = 8;
+    STUDIO_NOT_FOUND = 9;
+    STAFF_NOT_FOUND = 10;
+    CUSTOMER_NOT_FOUND = 11;
+    CREDIT_SHORTAGE = 12;
 }
 
 message ErrorResponse {
