@@ -218,15 +218,27 @@ message Lesson {
 }
 
 message RegisterLessonRequest {
-    int32 studioId = 2;
-    int32 staffId = 3;
-    int32 customerId = 4;
-    int32 fee = 5;
-    PaymentType paymentType = 6;
-    int64 takenAt = 7;    
+    int32 studioId = 1;
+    int32 staffId = 2;
+    int32 customerId = 3;
+    int32 fee = 4;
+    PaymentType paymentType = 5;
+    int64 takenAt = 6;
 }
 
 message RegisterLessonResponse {
     Lesson lesson = 1;
     Customer customer = 2;
+}
+
+message SearchLessonsRequest {
+    int32 studioId = 1;
+    int32 staffId = 2;
+    int32 customerId = 3;
+    int64 takenAtFrom = 4;
+    int64 takenAtTo = 5;
+}
+
+message SearchLessonsResponse {
+    repeated Lesson lessons = 1;
 }
