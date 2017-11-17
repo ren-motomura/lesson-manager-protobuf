@@ -16,6 +16,7 @@ enum ErrorType {
     STAFF_NOT_FOUND = 10;
     CUSTOMER_NOT_FOUND = 11;
     CREDIT_SHORTAGE = 12;
+    BAD_REQUEST = 13;
 }
 
 message ErrorResponse {
@@ -248,5 +249,21 @@ message DeleteLessonRequest {
 }
 
 message DeleteLessonResponse {
+    bool success = 1;
+}
+
+message MailAttachment {
+    string name = 1;
+    bytes data = 2;
+}
+
+message SendEmailRequest {
+    string subject = 1;
+    string body = 2;
+    repeated string toAddresses = 3;
+    repeated MailAttachment attachments = 4;
+}
+
+message SendEmailResponse {
     bool success = 1;
 }
