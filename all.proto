@@ -151,8 +151,20 @@ message Card {
 message Customer {
     int32 id = 1;
     string name = 2;
-    string description = 3;
-    Card card = 4;
+    string kana = 3;
+    int64 birthday = 4;
+    int32 gender = 5;
+    string postal_code1 = 6;
+    string postal_code2 = 7;
+    string address = 8;
+    string phone_number = 9;
+    int64 join_date = 10;
+    string email_address = 11;
+    bool can_mail = 12;
+    bool can_email = 13;
+    bool can_call = 14;
+    string description = 15;
+    Card card = 16;
 }
 
 message SelectCustomersResponse {
@@ -161,8 +173,20 @@ message SelectCustomersResponse {
 
 message CreateCustomerRequest {
     string name = 1;
-    string description = 2;
-    Card card = 3;
+    string kana = 2;
+    int64 birthday = 3;
+    int32 gender = 4;
+    string postal_code1 = 5;
+    string postal_code2 = 6;
+    string address = 7;
+    string phone_number = 8;
+    int64 join_date = 9;
+    string email_address = 10;
+    bool can_mail = 11;
+    bool can_email = 12;
+    bool can_call = 13;
+    string description = 14;
+    Card card = 15;
 }
 
 message CreateCustomerResponse {
